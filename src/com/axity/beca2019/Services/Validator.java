@@ -6,8 +6,17 @@ public abstract class Validator implements IValidation {
 
     IValidation next;
 
-    Validator linkWith(Validator next){
+     public Validator linkWith(Validator next){
         this.next=next;
         return next;
+    }
+
+    @Override
+    public Boolean validateNext(Purchase purchase) {
+        if (next == null){
+            return true;
+        }
+
+        return next.validate(purchase);
     }
 }
