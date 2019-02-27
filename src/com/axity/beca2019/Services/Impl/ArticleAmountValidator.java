@@ -10,6 +10,7 @@ public class ArticleAmountValidator extends Validator {
     @Override
     public Boolean validate(Purchase purchase) {
 
+        System.out.println("Articulo validando");
         if (purchase.getShoppingList().size()>MAX_ARTICLES){
             System.out.println("Lo lamento! no puedes comprar más de 5 artículos a la vez");
             return false;

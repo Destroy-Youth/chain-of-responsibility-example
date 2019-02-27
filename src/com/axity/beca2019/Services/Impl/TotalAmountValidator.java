@@ -14,6 +14,7 @@ public class TotalAmountValidator extends Validator{
         for (Article article : purchase.getShoppingList()) {
             totalAmount=totalAmount+article.getPrice();
         }
+        System.out.println("Venta total: "+totalAmount);
 
         if (totalAmount<150f){
             System.out.println(MESSAGE);
