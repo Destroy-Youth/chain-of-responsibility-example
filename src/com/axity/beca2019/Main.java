@@ -14,17 +14,17 @@ import java.util.ArrayList;
 public class Main {
 
 
-
     public static void main(String[] args) {
 
-        ArrayList<Article> list=new ArrayList<>();
-        list.add(new Article("Jabón",55.40f));
-        list.add(new Article("Jabón",55.40f));
-        list.add(new Article("Jabón",55.40f));
+        ArrayList<Article> list = new ArrayList<>();
+        list.add(new Article("Pan", 59.40f));
+        list.add(new Article("Jabón", 55.40f));
+        list.add(new Article("Awa", 103.90f));
+        list.add(new Article("Awa", 103.90f));
 
-        User user = new User("Ivan","12336724535123","Mexicano");
+        User user = new User("Ivan", "3423564758", "Canadiense");
 
-        Purchase purchase = new Purchase(user,list);
+        Purchase purchase = new Purchase(user, list);
 
 
         Validator validator = new ArticleAmountValidator();
