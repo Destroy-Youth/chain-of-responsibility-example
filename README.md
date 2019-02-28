@@ -1,4 +1,4 @@
-# chain-of-responsibility-example
+# Chain of responsability
 Ejemplo de patrón de diseño usando Java
 
 
